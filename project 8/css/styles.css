@@ -1,0 +1,148 @@
+
+/* =====================================
+   Presets
+======================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  background: rgba(235, 235, 235, 0.9);
+}
+
+
+/* =====================================
+   Gallery
+======================================== */
+
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.grid-container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+header {
+	text-align: left;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: 100%;
+  max-width: 360px;
+  margin: 10px 10px 20px;
+  padding: 10px;
+  background: rgba(245, 245, 245, 0.9);
+  border-radius: 0.25em;
+  border: 1px solid rgba(50, 50, 50, 0.3);
+  transition: .4s ease-out;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 95px;
+  margin: 10px 15px auto 10px;
+  border-radius: 50%;
+}
+
+.card-info-container {
+  text-align: left;
+}
+
+.card-name {
+  margin: 20px auto 0;
+}
+
+.card-text {
+  font-size: 0.9em;
+  color: rgba(50, 50, 50, 0.7);
+  margin: 7px auto;
+  transition: .4s ease-out;
+}
+
+/* =====================================
+   Modal
+======================================== */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  height: 475px;
+  margin: auto;
+  padding-bottom: 15px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 0.25em;
+  border: 1px solid rgba(100, 100, 100, 0.3);
+  transition: .4s ease-out;
+}
+
+.modal-img {
+  width: 150px;
+  margin-top: 35px;
+  border-radius: 50%;
+}
+
+.modal-name {
+  margin-bottom: 5px;
+}
+
+.modal-text {
+  color: rgba(50, 50, 50, 0.7);
+  margin: 10px;
+}
+
+.modal hr {
+  width: 75%;
+  margin: 25px auto 30px;
+  border-color: rgba(200, 200, 200, 0.2);
+}
+
+.close {
+  text-align: right;
+  padding-right: 15px;
+  line-height: 0;
+  cursor: pointer;
+}
