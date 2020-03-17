@@ -53,27 +53,26 @@ const modal = employee => {
       </div>
     </div>
   `;
+
+//closing the overlay
+
   modalContainer.style.display = 'block';
 
   const close = document.querySelector('.close');
-  
+
   close.addEventListener('click', () => {
     modalContainer.style.display = 'none';
   });
-  
 };
 
-// const modal = document.getElementById('modal')
-
-// alerts.innerHTML = `
-//   <div class="modalContainer">
-//     <p class="close">x</p>
-//   </div>`
-
-// // closing layover
-// alerts.addEventListener('click', (e) => {
-//   const element = e.target;
-//   if (element.classList.contains("closer")) {
-//     alerts.style.display = "none"
-//   }
-// });
+//employees names filtered
+for (i = 0; i < li.length; i++) {
+    p = li[i].getElementsByTagName("a")[0];
+    txtValue = p.textContent || p.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
