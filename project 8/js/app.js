@@ -1,5 +1,5 @@
 // Fetches 12 random user objects from randomuser.me and passes them to directory()
-fetch('https://randomuser.me/api/?results=12&nat=us&exc=login,gender,registered,id')
+fetch('https://fsjs-public-api-backup.herokuapp.com/api/')
   .then(response => response.json())
   .then(data => directory(data.results))
   .catch(error => console.error('Error fetching data:', error)
@@ -75,4 +75,3 @@ for (i = 0; i < li.length; i++) {
       li[i].style.display = "none";
     }
   }
-}
