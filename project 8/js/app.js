@@ -64,14 +64,3 @@ const modal = employee => {
     modalContainer.style.display = 'none';
   });
 };
-
-//employees names filtered
-for (i = 0; i < li.length; i++) {
-    p = li[i].getElementsByTagName("a")[0];
-    txtValue = p.textContent || p.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
